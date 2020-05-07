@@ -1,0 +1,12 @@
+{
+  "name": "create-picture",
+  "version": "0.1.1",
+  "description": "该组件提供了 Canvas 的图片绘制与文本绘制功能，使用同步的语法完成异步绘制，简化原生 canvas 绘制语法。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["canvas"],
+  "author": "ningbo",
+  "license": "ISC"
+}
