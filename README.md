@@ -11,6 +11,7 @@ npm i create-picture --save
 ```javascript
 import CreatePicture from 'create-picture';
 ```
+
 ### 使用
 
 基础示例
