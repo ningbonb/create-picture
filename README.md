@@ -17,7 +17,7 @@ import CreatePicture from 'create-picture';
 基础示例
 ```javascript
 // 初始化
-const cp:CreatePicture = new CreatePicture();
+const cp = new CreatePicture();
 
 // 绘制图片，参数1为图片路径，其他参数与 CanvasRenderingContext2D.drawImage() 参数相同
 cp.drawPicture(require('../assets/save_bg.jpg'),0,0);
