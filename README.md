@@ -35,6 +35,7 @@ cp.getPicture().then((picture)=>{
 
 - `new CreatePicture();` - 初始化，可接受一个对象参数
 - `drawPicture()` - 绘制图片，第一个参数为图片路径，其他参数与 [CanvasRenderingContext2D.drawImage()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/drawImage) 参数相同
+- `drawCirclePicture()` - 绘制头像等圆形图片，与 `drawPicture` 参数相同
 - `drawText()` - 绘制文本，返回文字宽度（可选）
 - `getPicture().then((picture)=>{});` - 最终合成的图片
 
@@ -49,6 +50,16 @@ cp.getPicture().then((picture)=>{
 
 - 第一个参数为图片路径
 - 其他参数与 [CanvasRenderingContext2D.drawImage()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/drawImage) 参数相同
+
+### drawCirclePicture() 可选参数
+
+- 第一个参数为图片路径
+- 其他参数与 [CanvasRenderingContext2D.drawImage()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/drawImage) 参数相同
+- 如需指定图片宽高，可以使用 `9` 个参数的方式，传入图片宽高未知可以传入 `auto` 自动获取
+- 示例
+```javascript
+cp.drawCirclePicture(headimgurl,0,0,'auto','auto',50,50,80,80);
+```
 
 ### drawText() 可选参数
 
