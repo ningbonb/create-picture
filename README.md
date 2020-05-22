@@ -20,7 +20,7 @@ import CreatePicture from 'create-picture';
 const cp = new CreatePicture();
 
 // 绘制图片，参数1为图片路径，其他参数与 CanvasRenderingContext2D.drawImage() 参数相同
-cp.drawPicture(require('../assets/save_bg.jpg'),0,0);
+cp.drawImage(require('../assets/save_bg.jpg'),0,0);
 
 // 绘制文本
 cp.drawText({content:'文本'});
@@ -34,8 +34,8 @@ cp.getPicture().then((picture)=>{
 ## 方法
 
 - `new CreatePicture();` - 初始化，可接受一个对象参数
-- `drawPicture()` - 绘制图片，第一个参数为图片路径，其他参数与 [CanvasRenderingContext2D.drawImage()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/drawImage) 参数相同
-- `drawCirclePicture()` - 绘制头像等圆形图片，与 `drawPicture` 参数相同
+- `drawImage()` - 绘制图片，第一个参数为图片路径，其他参数与 [CanvasRenderingContext2D.drawImage()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/drawImage) 参数相同
+- `drawCirclePicture()` - 绘制头像等圆形图片，与 `drawImage` 参数相同
 - `drawText()` - 绘制文本，返回文字宽度（可选）
 - `getPicture().then((picture)=>{});` - 最终合成的图片
 
@@ -46,7 +46,7 @@ cp.getPicture().then((picture)=>{
 - `width` - 画布宽度，默认值 `750`
 - `height` - 画布高度，默认值 `1448`
 
-### drawPicture() 可选参数
+### drawImage() 可选参数
 
 - 第一个参数为图片路径
 - 其他参数与 [CanvasRenderingContext2D.drawImage()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/drawImage) 参数相同
@@ -104,7 +104,7 @@ const cp:CreatePicture = new CreatePicture();
 const cp:CreatePicture = new CreatePicture({width:750,height:1448});
 
 // 绘制图片，参数1为图片路径，其他参数与 CanvasRenderingContext2D.drawImage() 参数相同
-cp.drawPicture(require('../assets/save_bg.jpg'),0,0);
+cp.drawImage(require('../assets/save_bg.jpg'),0,0);
 
 // 绘制文本
 cp.drawText({content:'文本'});
