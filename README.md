@@ -77,6 +77,8 @@ cp.drawCirclePicture(headimgurl,0,0,'auto','auto',50,50,80,80);
 - `textBaseline` - 文本基线，默认 `alphabetic`
 - `direction` - 文字方向，默认 `inherit`
 - `color` - 文字颜色，默认 `#000000`
+- `rotation` - 文字旋转角度，默认 `0`
+- `width` - 文字段落的宽度，超出自动换行，默认 `undefined`
 
 ### getPicture() 可选参数
 
