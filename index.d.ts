@@ -20,6 +20,7 @@ declare namespace CreatePicture{
         color?: string,
         rotation?: number,
         width?: undefined|number,
+        maxLength?: undefined|number,
     }
 }
 
