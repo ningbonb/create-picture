@@ -35,7 +35,7 @@ cp.getPicture().then((picture)=>{
 
 - `new CreatePicture();` - 初始化，可接受一个对象参数
 - `drawImage()` - 绘制图片，第一个参数为图片路径，其他参数与 [CanvasRenderingContext2D.drawImage()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/drawImage) 参数相同
-- `drawRectImage()` - 绘制重复排列的图片
+- `drawRepeatImage()` - 绘制重复排列的图片
 - `drawCirclePicture()` - 绘制头像等圆形图片，与 `drawImage` 参数相同
 - `drawText()` - 绘制文本，返回文字宽度（可选）
 - `getPicture().then((picture)=>{});` - 最终合成的图片
@@ -52,7 +52,7 @@ cp.getPicture().then((picture)=>{
 - 第一个参数为图片路径
 - 其他参数与 [CanvasRenderingContext2D.drawImage()](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/drawImage) 参数相同
 
-### drawRectImage() 参数
+### drawRepeatImage() 参数
 
 - 第一个参数为图片路径
 - 第二、三参数为平铺文件的宽高
