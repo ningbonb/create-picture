@@ -29,6 +29,7 @@ declare class CreatePicture{
     drawImage(image: any, dx: number, dy: number): void;
     drawImage(image: any, dx: number, dy: number, dw: number, dh: number): void;
     drawImage(image: any, sx: number, sy: number, sw: number|string, sh: number|string, dx: number, dy: number, dw: number, dh: number): void;
+    drawRectImage(image: any, dx: number, dy: number, dw: number, dh: number): void;
     drawCirclePicture(image: any, dx: number, dy: number): void;
     drawCirclePicture(image: any, dx: number, dy: number, dw: number, dh: number): void;
     drawCirclePicture(image: any, sx: number, sy: number, sw: number|string, sh: number|string, dx: number, dy: number, dw: number, dh: number): void;
